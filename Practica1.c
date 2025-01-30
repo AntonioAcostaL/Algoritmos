@@ -16,8 +16,8 @@ Por ejemplo:
 
 #include <stdio.h>
 
-int Vocales(char c) {
-    c = (c >= 'A' && c <= 'Z') ? c + 32 : c;
+int Vocales(char c) { //funcion que retorna un valor entero y espera un parametro de tipo char llamado 'c'
+    c = (c >= 'A' && c <= 'Z') ? c + 32 : c; // la variable c tipo char es igual a una operacion que dice que 
     return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
 }
 
