@@ -1,3 +1,19 @@
+/*El siguiente algoritmo permite generar identificadores únicos para usuarios basados en el
+nombre de su sitio web favorito.
+1. Primer dígito: Es el número de consonantes en el nombre del sitio web
+2. Segundo dígito: Es la 2da letra del nombre del sitio, convertida a mayúscula.
+3. Tercer dígito: Es el número de vocales en el nombre del sitio menos el número de
+consonantes, en caso de que la resta de un valor negativo convertirlo a su valor
+absoluto.
+4. Cuarto dígito: Es “-” si el nombre del sitio contiene una "o" (mayúscula o
+minúscula), y "$" si no la contiene.
+5. Últimos tres dígitos: Son las tres primeras consonantes del nombre del sitio, en orden
+inverso.
+Por ejemplo:
+• Para "Twitter", el identificador único sería: 53W$ttT
+• Para "Facebook", el identificador único sería: 4A0-bcF
+• Para "Google", el identificador único sería: 3O0-lgG*/
+
 #include <stdio.h>
 
 int Vocales(char c) {
