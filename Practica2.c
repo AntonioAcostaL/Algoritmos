@@ -14,3 +14,31 @@ y cuales estan disponibles.*/
 /*d) calcular el monto total del boletaje vendido. La primera fila cuesta 1000 pesos, la segunda 750
 la tercera 500 y el resto 300*/
 
+#include <stdio.h>
+
+int main(){
+    char opcion;
+
+    do{
+        printf("INICIO\n");
+        printf("a) Asignar Boletos\n");
+        printf("b) Cancelar Venta\n");
+        printf("c) Mostar mapa\n");
+        printf("d) Calcular monto tatal de ventas\n");
+        printf("e) Salir\n");
+        scanf("%c",&opcion);
+
+        switch (opcion)
+        {
+        case 'a':
+            AsignarBoletos();
+            break;
+        case 'e':
+            printf("Saliendo...\n");
+            break;
+
+        default:
+            printf("Opcion no existe. Intenta de new");
+        }
+    }
+}
