@@ -62,7 +62,7 @@ int validacion(){
     int  numero[2]={0}, i=0, j=0, valor=0;
     while (tecla!='\n')
     {
-        /* code */
+        scanf(" %c", &tecla);
     }
     
 }
