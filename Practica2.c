@@ -63,9 +63,29 @@ int validacion(){
     while (tecla!='\n')
     {
         scanf(" %c", &tecla);
+        if (tecla>=1 &&tecla<=9)
+        {
+            if (i<2)
+            {
+                printf("%c", tecla);
+                numero[i]=tecla - '0';
+                i++;
+            }
+        }
+        if (i>0 && tecla== " ")
+        {
+            printf("\b \b");
+            numero[i-1] = 0;
+            i--;
+        }
     }
-    
+    for (j = 0; j < i; j++)
+    {
+        valor = valor * 10 + numero[j];
+    }
+    return valor;
 }
+/*
 int validaDigitos(){
     char tecla;
     int numero[2], i=0, j=0, valor=0;
@@ -90,8 +110,9 @@ int validaDigitos(){
     }
     for (j = 0; j < i; j++)
     {
-        vaor = valor*10+numero[j];
+        valor = valor*10+numero[j];
     }
     return valor;
 }
 
+*/
