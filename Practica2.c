@@ -15,6 +15,9 @@ y cuales estan disponibles.*/
 la tercera 500 y el resto 300*/
 
 #include <stdio.h>
+#include <conio.h>
+
+void AsignarBoletos();
 
 int main(){
     char opcion;
@@ -22,11 +25,12 @@ int main(){
     do{
         printf("INICIO\n");
         printf("a) Asignar Boletos\n");
-        printf("b) Cancelar Venta\n");
+        printf("b) Cancelar una asignacion\n");
         printf("c) Mostar mapa\n");
-        printf("d) Calcular monto tatal de ventas\n");
+        printf("d) Calcular el totaal de ventas\n");
         printf("e) Salir\n");
-        scanf("%c",&opcion);
+        printf("Selecciona una opcion: ");
+        scanf(" %c", &opcion);
 
         switch (opcion)
         {
@@ -38,7 +42,34 @@ int main(){
             break;
 
         default:
-            printf("Opcion no existe. Intenta de new");
+            printf("\nOpcion no existe.\n");
         }
     }
+    while (opcion!='e');
+    
+    return 0;
 }
+
+/*Asignar boletos: Las filas están numeradas del 1 al 10 y cada fila tiene entre 8 y
+12 asientos, dependiendo de la fila. El cliente selecciona la fila y el asiento, pero si el
+asiento ya está ocupado, el sistema debe pedirle que elija otro.*/
+void AsignarBoletos(){
+    printf("Boletos asignado\n");
+}
+
+int validaDigitos(){
+    char tecla;
+    int numero[2], i=0, j=0, valor=0;
+    while (tecla!=ENTER)    
+    {
+        tecla=getch();
+        if (tecla>='1'
+        {
+            /* code */
+        }
+        
+    }
+    
+}
+
+void inicializarArreglo(int )
