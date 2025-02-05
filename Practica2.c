@@ -57,6 +57,15 @@ void AsignarBoletos(){
     printf("Boletos asignado\n");
 }
 
+int validacion(){
+    char tecla=0; 
+    int  numero[2]={0}, i=0, j=0, valor=0;
+    while (tecla!='\n')
+    {
+        /* code */
+    }
+    
+}
 int validaDigitos(){
     char tecla;
     int numero[2], i=0, j=0, valor=0;
