@@ -63,13 +63,26 @@ int validaDigitos(){
     while (tecla!=ENTER)    
     {
         tecla=getch();
-        if (tecla>='1'
+        if (tecla>='1'&&tecla<='9')
         {
-            /* code */
+            if (i<2)
+            {
+                printf("%c", tecla);
+                numero[i] = tecla -'0';
+                i++;
+            }
         }
-        
+        if (i>0&&tecla==BACKSPACE)
+        {
+            printf("\b \b");
+            numero[i-1] = 0;
+            i--;
+        }
     }
-    
+    for (j = 0; j < i; j++)
+    {
+        vaor = valor*10+numero[j];
+    }
+    return valor;
 }
 
-void inicializarArreglo(int )
